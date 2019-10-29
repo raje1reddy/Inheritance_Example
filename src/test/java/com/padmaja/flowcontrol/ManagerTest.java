@@ -5,11 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ManagerTest {
-    Employee employee = new Employee();
+    Manager manager = new Manager();
     @Test
     public void reportProjectStatus() {
-        employee.startProjectWork();
-        employee.reachOffice();
+        manager.startProjectWork();
+        manager.reachOffice();
+        manager.reportProjectStatus();
 
     }
 }

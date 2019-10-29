@@ -6,7 +6,8 @@ import static org.junit.Assert.*;
 
 public class ProgrammerTest {
 
-    Employee employee = new Employee();
+    Programmer programmer = new Programmer();
+   // Employee employee = new Employee();
 
     @Test
     public void writeCode() {
@@ -15,7 +16,9 @@ public class ProgrammerTest {
 
     @Test
     public void accessBaseClassMembers() {
-        employee.reachOffice();
-        employee.startProjectWork();
+        programmer.reachOffice();
+        programmer.startProjectWork();
+        programmer.writeCode();
+        programmer.accessBaseClassMembers();
     }
 }
