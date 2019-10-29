@@ -18,17 +18,6 @@ public class Employee {
 
     }
 
-    class Manager extends Employee {
-        protected int teamSize;
-        public void reportProjectStatus(){}
-    }
 
-    class  Programmer extends Employee{
-        private String[] programmingLanguages;
-        public void writeCode(){}
-        public void accessBaseClassMembers(){
-            name = "Programmer";
-        }
-    }
 
 }
