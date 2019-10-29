@@ -11,6 +11,8 @@ import static org.junit.Assert.*;
 public class EmployeeTest {
 
         private Employee employee;
+        private Manager manager;
+        private Programmer programmer;
         @BeforeClass
         public static void setUpClass()
         {
@@ -19,7 +21,10 @@ public class EmployeeTest {
         }
         @Before
         public void setUp(){
+
             employee = new Employee();
+            manager = new Manager();
+            programmer = new Programmer();
         }
 
         @After
@@ -36,95 +41,23 @@ public class EmployeeTest {
             //int expectedresult = 6;
             //assertEquals(expectedresult,result);
         }
-       /* @Test
-        public void WhileLoopExample2num9() {
-            Employee employee = new Employee();
-            int result = employee.whileLoopExample2(9,true);
-            System.out.println(result);
-            int expectedresult = 9;
-            assertEquals(expectedresult,result);
-        }
-
     @Test
-    public void whileLoopExample_num99_true() {
-        int result = employee.tablesExample(99,true);
-        System.out.println(result);
-        int expectedresult = 99;
-        assertEquals(expectedresult,result);
-    }
-
-
-    @Test
-    public void WhileLoopExample4_num0_false() {
-        Employee employee = new Employee();
-        int result = employee.whileLoopExample2(0,false);
-        System.out.println(result);
-        int expectedresult = -1;
-        assertEquals(expectedresult,result);
-    }
-    @Test
-    public void whileLoopExample5_num999_true() {
-        int result = employee.tablesExample(999,true);
-        System.out.println(result);
-        int expectedresult = 999;
-        assertEquals(expectedresult,result);
+    public void inheritanceExample1() {
+        manager.startProjectWork();
+        manager.reachOffice();
+        manager.reportProjectStatus();
+        //manager.teamSize();
     }
 
     @Test
-    public void whileLoopExample5_num9999_true() {
-        int result = employee.whileLoopExample2(9999,true);
-        System.out.println(result);
-        int expectedresult = 9999;
-        assertEquals(expectedresult,result);
-    }
-    @Test
-    public void whileLoopExample6_num0_false() {
-        int result = employee.tablesExample(0,false);
-        System.out.println(result);
-        int expectedresult = -1;
-        assertEquals(expectedresult,result);
-    }
-
-    @Test
-    public void whileLoopExample7_numnegative_true() {
-        int result = employee.tablesExample(-9,true);
-        System.out.println(result);
-        int expectedresult = -9;
-        assertEquals(expectedresult,result);
-    }
-
-    @Test
-    public void whileLoopExample8_numinvalid_false() {
-        int result = employee.tablesExample(-99999999,false);
-        System.out.println(result);
-        int expectedresult = -100000006;
-        assertEquals(expectedresult,result);
-    }
-
-    @Test
-    public void whileLoopExample6_num00_false() {
-        int result = employee.whileLoopExample2(0,true);
-        System.out.println(result);
-        int expectedresult = 0;
-        assertEquals(expectedresult,result);
-    }
-    @Test
-    public void whileLoopExample8_numinvalid1_false() {
-        int result = employee.whileLoopExample2(-99999999,false);
-        System.out.println(result);
-        int expectedresult = -100000006;
-        assertEquals(expectedresult,result);
+    public void inheritanceExample2() {
+        programmer.startProjectWork();
+        programmer.reachOffice();
+        programmer.accessBaseClassMembers();
+        programmer.writeCode();
     }
 
 
-    @Test
-    public void whileLoopExample7_numnegative1_true() {
-        int result = employee.whileLoopExample2(-9,false);
-        System.out.println(result);
-        int expectedresult = -15;
-        assertEquals(expectedresult,result);
-    }
-*/
 }
 
 
