@@ -43,16 +43,16 @@ public class EmployeeTest {
         }
     @Test
     public void inheritanceExample1() {
-        manager.startProjectWork();
-        manager.reachOffice();
+        employee.startProjectWork();
+        employee.reachOffice();
         manager.reportProjectStatus();
         //manager.teamSize();
     }
 
     @Test
     public void inheritanceExample2() {
-        programmer.startProjectWork();
-        programmer.reachOffice();
+        employee.startProjectWork();
+        employee.reachOffice();
         programmer.accessBaseClassMembers();
         programmer.writeCode();
     }
